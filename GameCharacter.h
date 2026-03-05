@@ -25,7 +25,7 @@ public:
     int getPower() const;
     int getLevel() const;
 
-    void attack(GameCharacter target);
+    void attack(GameCharacter& target);
     void damage(int l, int p);
     void levelUp();
     void status() const;

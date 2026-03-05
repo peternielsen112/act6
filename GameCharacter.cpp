@@ -19,7 +19,7 @@ void GameCharacter::setHealth(int i) {
   }
   else {
     health = i;
-    cout << "Health of " << name << "is now " << i << " / " << health << std::endl;
+    cout << "Health of " << name << " is now " << i << " / 100" << std::endl;
   }
 }
 void GameCharacter::setPower(int g) {
@@ -38,12 +38,8 @@ int GameCharacter::getHealth() const { return health; }
 int GameCharacter::getPower() const { return power; }
 int GameCharacter::getLevel() const { return level; }
 
-void GameCharacter::attack(GameCharacter j) { j.damage(level, power); }
-void GameCharacter::damage(int l, int p) {
-  health -= (l*p);
-//  setHealth((health - (l*p)));
-  cout << l*p << std::endl << health << std::endl;
-}
+void GameCharacter::attack(GameCharacter& j) { j.damage(level, power); }
+void GameCharacter::damage(int l, int p) { setHealth(health - (l*p)); }
 void GameCharacter::levelUp() { setLevel((level+1)); }
 void GameCharacter::status() const { printInfo(); }
 
