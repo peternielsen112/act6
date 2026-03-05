@@ -1,0 +1,11 @@
+Health of Zelda is now 100 / 100
+Health of Link is now 100 / 100
+Name: Zelda, Health: 100, Power: 2, Level: 4
+
+Name: Link, Health: 100, Power: 1, Level: 2
+
+Modifying... 
+Health of Link is now 92 / 100
+Health of Zelda is now 98 / 100
+Health: 98 Level: 5 Power: 2 Name: Zelda
+Health: 92 Level: 3 Power: 1 Name: Link
